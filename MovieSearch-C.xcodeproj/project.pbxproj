@@ -17,6 +17,7 @@
 		170A0C362298490B006DC680 /* HAJMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C352298490B006DC680 /* HAJMovieController.m */; };
 		170A0C3D22985468006DC680 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C3C22985468006DC680 /* MovieTableViewCell.swift */; };
 		170A0C4122985839006DC680 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C4022985839006DC680 /* MovieTableViewController.swift */; };
+		170A0C44229865EE006DC680 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C43229865EE006DC680 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		170A0C3B22985467006DC680 /* MovieSearch-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieSearch-C-Bridging-Header.h"; sourceTree = "<group>"; };
 		170A0C3C22985468006DC680 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		170A0C4022985839006DC680 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		170A0C43229865EE006DC680 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				170A0C4022985839006DC680 /* MovieTableViewController.swift */,
+				170A0C43229865EE006DC680 /* MovieDetailViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				170A0C322298408D006DC680 /* HAJMovie.m in Sources */,
 				170A0C3D22985468006DC680 /* MovieTableViewCell.swift in Sources */,
 				170A0C2222984016006DC680 /* MovieSearch_C.xcdatamodeld in Sources */,
+				170A0C44229865EE006DC680 /* MovieDetailViewController.swift in Sources */,
 				170A0C2A22984018006DC680 /* main.m in Sources */,
 				170A0C1922984016006DC680 /* AppDelegate.m in Sources */,
 				170A0C4122985839006DC680 /* MovieTableViewController.swift in Sources */,

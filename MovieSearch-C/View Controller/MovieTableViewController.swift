@@ -10,7 +10,14 @@ import UIKit
 
 class MovieTableViewController: UITableViewController {
 
-    var movies: [HAJMovie] = []
+    var movies: [HAJMovie] = []{
+        didSet{
+            DispatchQueue.main.async {
+                print("got movies. \(self.movies.count)")
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,26 +43,32 @@ class MovieTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if !self.movies.isEmpty{ //preeeeetty sure there'd be some sketchy results if i let them segue with all the cells empty.
+            if segue.identifier == "toMovieDetail"{
+                guard let destinVC = segue.destination as? MovieDetailViewController else {return}
+                guard let index = tableView.indexPathForSelectedRow else {return}
+                let passMovie = self.movies[index.row]
+                destinVC.movie = passMovie
+            }
+        }
     }
-    */
+    
 
 }
+//adopt the delegate protocol so the search bar can politely boss us around
 extension MovieTableViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text else {return}
-        if (searchText != ""){
-                HAJMovieController.shared().fetchMovies(withSearch: searchText) { (fetchedMovies) in
+        if (searchText != ""){ //dont search if they didnt type.
+        HAJMovieController.shared().fetchMovies(withSearch: searchText) { (fetchedMovies) in
                 DispatchQueue.main.async {
+                    //i'm doing this on main thread because it'll trigger a didset that'll update UI and i am PARANOID.
                     self.movies = fetchedMovies
-                    print("got movies. \(self.movies.count)")
-                    self.tableView.reloadData()
                 }
             }
         }
