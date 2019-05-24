@@ -8,26 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		170A0C1922984016006DC680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C1822984016006DC680 /* AppDelegate.m */; };
-		170A0C1C22984016006DC680 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C1B22984016006DC680 /* ViewController.m */; };
 		170A0C1F22984016006DC680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A0C1D22984016006DC680 /* Main.storyboard */; };
 		170A0C2222984016006DC680 /* MovieSearch_C.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C2022984016006DC680 /* MovieSearch_C.xcdatamodeld */; };
 		170A0C2422984018006DC680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170A0C2322984018006DC680 /* Assets.xcassets */; };
 		170A0C2722984018006DC680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A0C2522984018006DC680 /* LaunchScreen.storyboard */; };
 		170A0C2A22984018006DC680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C2922984018006DC680 /* main.m */; };
+		170A0C322298408D006DC680 /* HAJMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C312298408D006DC680 /* HAJMovie.m */; };
+		170A0C362298490B006DC680 /* HAJMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C352298490B006DC680 /* HAJMovieController.m */; };
+		170A0C3D22985468006DC680 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C3C22985468006DC680 /* MovieTableViewCell.swift */; };
+		170A0C4122985839006DC680 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A0C4022985839006DC680 /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170A0C1422984016006DC680 /* MovieSearch-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieSearch-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		170A0C1722984016006DC680 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		170A0C1822984016006DC680 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		170A0C1A22984016006DC680 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		170A0C1B22984016006DC680 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		170A0C1E22984016006DC680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170A0C2122984016006DC680 /* MovieSearch_C.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieSearch_C.xcdatamodel; sourceTree = "<group>"; };
 		170A0C2322984018006DC680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170A0C2622984018006DC680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		170A0C2822984018006DC680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		170A0C2922984018006DC680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		170A0C302298408D006DC680 /* HAJMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAJMovie.h; sourceTree = "<group>"; };
+		170A0C312298408D006DC680 /* HAJMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAJMovie.m; sourceTree = "<group>"; };
+		170A0C342298490B006DC680 /* HAJMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAJMovieController.h; sourceTree = "<group>"; };
+		170A0C352298490B006DC680 /* HAJMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAJMovieController.m; sourceTree = "<group>"; };
+		170A0C3B22985467006DC680 /* MovieSearch-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieSearch-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		170A0C3C22985468006DC680 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		170A0C4022985839006DC680 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +70,61 @@
 			children = (
 				170A0C1722984016006DC680 /* AppDelegate.h */,
 				170A0C1822984016006DC680 /* AppDelegate.m */,
-				170A0C1A22984016006DC680 /* ViewController.h */,
-				170A0C1B22984016006DC680 /* ViewController.m */,
 				170A0C1D22984016006DC680 /* Main.storyboard */,
+				170A0C42229858AC006DC680 /* View Controller */,
 				170A0C2322984018006DC680 /* Assets.xcassets */,
 				170A0C2522984018006DC680 /* LaunchScreen.storyboard */,
 				170A0C2822984018006DC680 /* Info.plist */,
 				170A0C2922984018006DC680 /* main.m */,
 				170A0C2022984016006DC680 /* MovieSearch_C.xcdatamodeld */,
+				170A0C3B22985467006DC680 /* MovieSearch-C-Bridging-Header.h */,
+				170A0C3C22985468006DC680 /* MovieTableViewCell.swift */,
+				170A0C3F2298549F006DC680 /* View */,
+				170A0C372298543B006DC680 /* Model Controller */,
+				170A0C33229848F7006DC680 /* Model */,
+				170A0C3E2298548B006DC680 /* Bridging Header */,
 			);
 			path = "MovieSearch-C";
+			sourceTree = "<group>";
+		};
+		170A0C33229848F7006DC680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				170A0C302298408D006DC680 /* HAJMovie.h */,
+				170A0C312298408D006DC680 /* HAJMovie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		170A0C372298543B006DC680 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				170A0C342298490B006DC680 /* HAJMovieController.h */,
+				170A0C352298490B006DC680 /* HAJMovieController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		170A0C3E2298548B006DC680 /* Bridging Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Bridging Header";
+			sourceTree = "<group>";
+		};
+		170A0C3F2298549F006DC680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		170A0C42229858AC006DC680 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				170A0C4022985839006DC680 /* MovieTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +158,7 @@
 				TargetAttributes = {
 					170A0C1322984016006DC680 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -144,10 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170A0C362298490B006DC680 /* HAJMovieController.m in Sources */,
+				170A0C322298408D006DC680 /* HAJMovie.m in Sources */,
+				170A0C3D22985468006DC680 /* MovieTableViewCell.swift in Sources */,
 				170A0C2222984016006DC680 /* MovieSearch_C.xcdatamodeld in Sources */,
-				170A0C1C22984016006DC680 /* ViewController.m in Sources */,
 				170A0C2A22984018006DC680 /* main.m in Sources */,
 				170A0C1922984016006DC680 /* AppDelegate.m in Sources */,
+				170A0C4122985839006DC680 /* MovieTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YHWYH93Z;
 				INFOPLIST_FILE = "MovieSearch-C/Info.plist";
@@ -298,6 +356,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HaleyJones.MovieSearch-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearch-C/MovieSearch-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YHWYH93Z;
 				INFOPLIST_FILE = "MovieSearch-C/Info.plist";
@@ -315,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HaleyJones.MovieSearch-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieSearch-C/MovieSearch-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
